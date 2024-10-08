@@ -1,15 +1,21 @@
 import "./Footer.css";
 
+// SVGs
 import Instagram from "../../assets/instagram.svg";
 import Github from "../../assets/github.svg";
 import Gmail from "../../assets/gmail.svg";
 import Linkedin from "../../assets/linkedin.svg";
 import Whatsapp from "../../assets/whatsapp.svg";
 
+// Context
+import { useLanguage } from "../../context/LanguageContext";
+
 const Footer = () => {
+  const { t } = useLanguage();
+
   return (
-    <footer className="footer">
-      <h2 className="contact-title">Contatos</h2>
+    <footer id="contact" className="footer">
+      <h2 className="contact-title">{t("footer", "contact")}</h2>
       <div className="contact-card">
         <a
           href="https://www.instagram.com/eros_netto"
@@ -52,7 +58,9 @@ const Footer = () => {
           <img src={Whatsapp} alt="WhatsApp" />
         </a>
       </div>
-      <p className="copyright">Feito por Eros N. Antunes &copy;2024</p>
+      <p className="copyright">
+        &copy; {new Date().getFullYear()} {t("footer", "copyright")}
+      </p>
     </footer>
   );
 };

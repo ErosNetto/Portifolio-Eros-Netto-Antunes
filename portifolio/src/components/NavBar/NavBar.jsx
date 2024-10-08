@@ -1,9 +1,27 @@
 import { useState } from "react";
+
+// Icons
 import { FiMenu, FiX } from "react-icons/fi";
+
+// CSS
 import "./NavBar.css";
+
+// Context
+import { useLanguage } from "../../context/LanguageContext";
+
+// Components
+import FloatingActionButton from "../FloatingActionButton/FloatingActionButton";
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const { t } = useLanguage();
+
+  const navItems = ["home", "about", "tech", "projects", "contact"];
+
+  // Função para fechar o menu
+  const handleLinkClick = () => {
+    setIsOpen(false);
+  };
 
   return (
     <nav className="navbar">
@@ -14,13 +32,14 @@ const NavBar = () => {
           </div>
           <div className="navbar-menu desktop">
             <div className="menu-items">
-              {["Home", "About", "Tech", "Projects", "Contact"].map((item) => (
+              {navItems.map((item) => (
                 <a
                   key={item}
-                  href={`#${item.toLowerCase()}`}
+                  href={`#${item}`}
                   className="menu-link"
+                  onClick={handleLinkClick}
                 >
-                  {item}
+                  {t("navbar", item)}
                 </a>
               ))}
             </div>
@@ -34,13 +53,19 @@ const NavBar = () => {
       </div>
       <div className={`navbar-menu mobile ${isOpen ? "open" : ""}`}>
         <div className="menu-items">
-          {["Home", "About", "Tech", "Projects", "Contact"].map((item) => (
-            <a key={item} href={`#${item.toLowerCase()}`} className="menu-link">
-              {item}
+          {navItems.map((item) => (
+            <a
+              key={item}
+              href={`#${item}`}
+              className="menu-link"
+              onClick={handleLinkClick}
+            >
+              {t("navbar", item)}
             </a>
           ))}
         </div>
       </div>
+      <FloatingActionButton />
     </nav>
   );
 };

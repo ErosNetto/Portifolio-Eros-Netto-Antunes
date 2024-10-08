@@ -1,5 +1,10 @@
+// CSS
 import "./App.css";
 
+// Context
+import { LanguageProvider } from "./context/LanguageContext";
+
+// Components
 import NavBar from "./components/NavBar/NavBar";
 import Intro from "./components/Intro/Intro";
 import AboutMe from "./components/AboutMe/AboutMe";
@@ -10,12 +15,14 @@ import Footer from "./components/Footer/Footer";
 function App() {
   return (
     <div className="app">
-      <NavBar />
-      <Intro />
-      <AboutMe />
-      <TechAndTools />
-      <Projects />
-      <Footer />
+      <LanguageProvider>
+        <NavBar />
+        <Intro />
+        <AboutMe />
+        <TechAndTools />
+        <Projects />
+        <Footer />
+      </LanguageProvider>
     </div>
   );
 }
