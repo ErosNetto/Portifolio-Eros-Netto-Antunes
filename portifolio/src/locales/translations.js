@@ -30,6 +30,22 @@ const translations = {
     },
   },
   aboutMe: {
+    pt: {
+      title: "Sobre Mim",
+      aboutTextOne: "",
+      aboutTextTwo: "",
+    },
+    en: {
+      title: "About Me",
+      aboutTextOne: "",
+      aboutTextTwo: "",
+    },
+  },
+  techAndTools: {
+    pt: {},
+    en: {},
+  },
+  projects: {
     pt: {},
     en: {},
   },
