@@ -42,15 +42,23 @@ const technologyAndToolLogos = {
   insomnia: InsomniaLogo,
 };
 
+// Translations
+import projectTranslations from "../../translations/projectsTranslations";
+
+// // Logos
+// import { technologyAndToolLogos } from "../../assets/techAndTools";
+
 const ProjectCard = ({ project }) => {
-  const { t } = useLanguage();
+  const { currentLanguage, t } = useLanguage();
+
+  const translation = projectTranslations[currentLanguage][project.id];
 
   return (
     <div className="project-card">
       <div className="project-image-container">
         <img
           src={project.image}
-          alt={project.title}
+          alt={translation.title}
           className="project-image"
         />
         <span
@@ -63,15 +71,16 @@ const ProjectCard = ({ project }) => {
       </div>
       <div className="project-content">
         <div className="project-header">
-          <h3 className="project-title">{project.title}</h3>
+          <h3 className="project-title">{translation.title}</h3>
           {project.isFavorite && <BsStarFill className="star-icon" />}
         </div>
-        <p className="project-description">{project.description}</p>
+        <p className="project-description">{translation.description}</p>
         <div className="project-technologies">
           {project.technologies.map((tech) => (
             <img
               key={tech}
               src={technologyAndToolLogos[tech]}
+              // src={technologyAndToolLogos[tech]}
               alt={tech}
               className="technology-logo"
               title={tech}

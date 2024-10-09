@@ -4,15 +4,18 @@ import websiteTranslations from "../translations/websiteTranslations";
 const LanguageContext = createContext();
 
 export const LanguageProvider = ({ children }) => {
-  const [language, setLanguage] = useState("pt");
+  const [currentLanguage, setCurrentLanguage] = useState("pt");
 
   const t = (component, key) => {
-    const componentTranslations = websiteTranslations[component][language];
+    const componentTranslations =
+      websiteTranslations[component][currentLanguage];
     return componentTranslations[key] || key;
   };
 
   return (
-    <LanguageContext.Provider value={{ t, setLanguage, language }}>
+    <LanguageContext.Provider
+      value={{ t, setCurrentLanguage, currentLanguage }}
+    >
       {children}
     </LanguageContext.Provider>
   );

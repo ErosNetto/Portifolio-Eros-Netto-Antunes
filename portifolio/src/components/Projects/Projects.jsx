@@ -1,5 +1,4 @@
 import "./Projects.css";
-
 import { useState } from "react";
 
 // Context
@@ -9,11 +8,14 @@ import { useLanguage } from "../../context/LanguageContext";
 import ProjectCard from "../ProjectCard/ProjectCard";
 import ProjectFilter from "../ProjectFilter/ProjectFilter";
 
-// Data project
+// Data
 import projectsData from "../../data/projectsData";
 
+// Translations
+import projectTranslations from "../../translations/projectsTranslations";
+
 const Projects = () => {
-  const { t } = useLanguage();
+  const { t, currentLanguage } = useLanguage(); // Pegue a linguagem atual
   const [searchTerm, setSearchTerm] = useState("");
   const [filterSelect, setFilterSelect] = useState("all");
   const [techFilters, setTechFilters] = useState([]);
@@ -23,9 +25,10 @@ const Projects = () => {
   );
 
   const filteredProjects = projectsData.filter((project) => {
+    const translation = projectTranslations[currentLanguage][project.id];
     const matchesSearch =
-      project.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      project.description.toLowerCase().includes(searchTerm.toLowerCase());
+      translation.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      translation.description.toLowerCase().includes(searchTerm.toLowerCase());
 
     const matchesFilter =
       filterSelect === "all" ||
