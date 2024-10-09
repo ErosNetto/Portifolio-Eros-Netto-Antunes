@@ -11,6 +11,7 @@ import AboutMe from "./components/AboutMe/AboutMe";
 import TechAndTools from "./components/TechAndTools/TechAndTools";
 import Projects from "./components/Projects/Projects";
 import Footer from "./components/Footer/Footer";
+import FloatingActionButton from "./components/FloatingActionButton/FloatingActionButton";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <TechAndTools />
         <Projects />
         <Footer />
+        <FloatingActionButton />
       </LanguageProvider>
     </div>
   );

@@ -1,17 +1,19 @@
 .navbar {
-  background: #212121;
-  color: white;
+  color: #fff;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 100;
+  background: rgba(33, 33, 33, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 
 .container {
-  max-width: 130rem;
+  max-width: 100rem;
   margin: 0 auto;
-  padding: 0 4.375rem;
+  padding: 0.2rem 4.375rem;
 }
 
 .navbar-content {
@@ -35,7 +37,7 @@
   padding: 0.5rem 0.75rem;
   border-radius: 0.25rem;
   color: #fff;
-  font-size: 0.875rem;
+  font-size: 0.9rem;
   font-weight: 500;
 }
 
@@ -81,7 +83,10 @@
     top: 100%;
     left: 0;
     right: 0;
-    background-color: #212121;
+    /* background-color: #212121; */
+    background: rgba(33, 33, 33, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     z-index: 99;
     max-height: 0;
     overflow: hidden;

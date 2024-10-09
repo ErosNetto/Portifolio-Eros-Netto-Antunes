@@ -4,7 +4,7 @@ import ARedeSocial from "../assets/projects/a-rede-social.webp";
 import CasaLuzImoveis from "../assets/projects/casa-luz-imoveis.webp";
 import MiniBlog from "../assets/projects/miniblog.webp";
 // import MovieHub from "../assets/projects/movie-hub.webp";
-// import TaskMaster from "../assets/projects/task-master.webp";
+import TaskMaster from "../assets/projects/projeto_task_master.png";
 import PalavraOculta from "../assets/projects/palavra-oculta.webp";
 import LandingPage from "../assets/projects/landing-page.webp";
 import SMMercearia from "../assets/projects/sm-mercearia.webp";
@@ -12,11 +12,8 @@ import SMMercearia from "../assets/projects/sm-mercearia.webp";
 const projectsData = [
   {
     id: 1,
-    title: "Site Venda de Curso",
-    description:
-      "Este é o meu Trabalho de Conclusão de Curso para o Técnico em Informática. O projeto consiste em um Site de Venda de Cursos Online, que foi inspirado no website da Udemy.",
     image: SiteVendaDeCurso,
-    technologies: ["js", "react", "node", "redux", "css", "mySQL"],
+    technologies: ["js", "react", "node", "redux", "css", "mysql"],
     isFavorite: true,
     type: "personal",
     code: "https://github.com/ErosNetto/TCC-Site-Venda-de-Curso",
@@ -24,8 +21,6 @@ const projectsData = [
   },
   {
     id: 2,
-    title: "A Rede Social",
-    description: "Projeto de uma rede social parecida com o Instagram.",
     image: ARedeSocial,
     technologies: ["js", "react", "node", "redux", "css", "mongodb"],
     isFavorite: true,
@@ -35,9 +30,6 @@ const projectsData = [
   },
   {
     id: 3,
-    title: "Casa Luz Imoveis",
-    description:
-      "A collaborative task management application with real-time updates and team features.",
     image: CasaLuzImoveis,
     technologies: ["js", "react", "node", "redux", "css", "mongodb"],
     isFavorite: true,
@@ -47,10 +39,8 @@ const projectsData = [
   },
   {
     id: 4,
-    title: "MiniBlog",
-    description: "Este projeto consiste em um website de um MiniBlog.",
     image: MiniBlog,
-    technologies: ["js", "react", "node", "context", "css", "firebase"],
+    technologies: ["js", "react", "node", "css", "firebase"],
     isFavorite: false,
     type: "personal",
     code: "https://github.com/ErosNetto/Projeto-MiniBlog",
@@ -58,9 +48,6 @@ const projectsData = [
   },
   {
     id: 5,
-    title: "MovieHub",
-    description:
-      "Projeto de uma biblioteca de filmes criada com React e integração com a API do TMDB.",
     // image: MovieHub,
     technologies: ["js", "react", "node", "css"],
     isFavorite: true,
@@ -70,10 +57,7 @@ const projectsData = [
   },
   {
     id: 6,
-    title: "TaskMaster",
-    description:
-      "Projeto de uma lista de tarefas simples, desenvolvida utilizando React e TypeScript.",
-    // image: TaskMaster,
+    image: TaskMaster,
     technologies: ["ts", "react", "node", "css"],
     isFavorite: false,
     type: "personal",
@@ -82,8 +66,6 @@ const projectsData = [
   },
   {
     id: 7,
-    title: "Palavra Oculta",
-    description: "Jogo interativo de adivinhação de palavras com dicas.",
     image: PalavraOculta,
     technologies: ["js", "react", "node"],
     isFavorite: false,
@@ -93,8 +75,6 @@ const projectsData = [
   },
   {
     id: 8,
-    title: "Landing page",
-    description: "Uma Landing page simples.",
     image: LandingPage,
     technologies: ["html", "css", "js"],
     isFavorite: false,
@@ -104,9 +84,6 @@ const projectsData = [
   },
   {
     id: 9,
-    title: "SM-Mercearia",
-    description:
-      "Meu primeiro projeto desenvolvido durante o curso de TI é um site simples criado para uma mercearia.",
     image: SMMercearia,
     technologies: ["html", "css", "js"],
     isFavorite: false,

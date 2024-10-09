@@ -1,6 +1,10 @@
 import "./ProjectCard.css";
 
+// Icons
 import { BsStarFill, BsStar } from "react-icons/bs";
+
+// Context
+import { useLanguage } from "../../context/LanguageContext";
 
 // SVGs
 import JSLogo from "../../assets/techAndTools/javascript-logo.svg";
@@ -11,7 +15,7 @@ import ReduxLogo from "../../assets/techAndTools/redux-logo.svg";
 // import CsharpLogo from "../../assets/techAndTools/csharp-logo.svg";
 import MongoDBLogo from "../../assets/techAndTools/mongodb-logo.svg";
 import MySQLLogo from "../../assets/techAndTools/mysql-logo.svg";
-// import FirebaseLogo from "../../assets/techAndTools/firebase-logo.svg";
+import FirebaseLogo from "../../assets/techAndTools/firebase-logo.svg";
 import HTMLLogo from "../../assets/techAndTools/html-logo.svg";
 import CSSLogo from "../../assets/techAndTools/css-logo.svg";
 import DockerLogo from "../../assets/techAndTools/docker-logo.svg";
@@ -28,8 +32,8 @@ const technologyAndToolLogos = {
   redux: ReduxLogo,
   // csharp: CsharpLogo,
   mongodb: MongoDBLogo,
-  mySQL: MySQLLogo,
-  // firebase: FirebaseLogo,
+  mysql: MySQLLogo,
+  firebase: FirebaseLogo,
   html: HTMLLogo,
   css: CSSLogo,
   docker: DockerLogo,
@@ -38,37 +42,45 @@ const technologyAndToolLogos = {
   insomnia: InsomniaLogo,
 };
 
-const ProjectCard = ({ project }) => (
-  <div className="project-card">
-    <div className="project-image-container">
-      <img src={project.image} alt={project.title} className="project-image" />
-      <span
-        className={`project-type ${
-          project.type === "personal" ? "personal" : "freelance"
-        }`}
-      >
-        {project.type === "personal" ? "Pessoal" : "Freelance"}
-      </span>
-    </div>
-    <div className="project-content">
-      <div className="project-header">
-        <h3 className="project-title">{project.title}</h3>
-        {project.isFavorite && <BsStarFill className="star-icon" />}
+const ProjectCard = ({ project }) => {
+  const { t } = useLanguage();
+
+  return (
+    <div className="project-card">
+      <div className="project-image-container">
+        <img
+          src={project.image}
+          alt={project.title}
+          className="project-image"
+        />
+        <span
+          className={`project-type ${
+            project.type === "personal" ? "personal" : "freelance"
+          }`}
+        >
+          {project.type === "personal" ? t("projects", "type_1") : "Freelance"}
+        </span>
       </div>
-      <p className="project-description">{project.description}</p>
-      <div className="project-technologies">
-        {project.technologies.map((tech) => (
-          <img
-            key={tech}
-            src={technologyAndToolLogos[tech]}
-            alt={tech}
-            className="technology-logo"
-            title={tech}
-          />
-        ))}
+      <div className="project-content">
+        <div className="project-header">
+          <h3 className="project-title">{project.title}</h3>
+          {project.isFavorite && <BsStarFill className="star-icon" />}
+        </div>
+        <p className="project-description">{project.description}</p>
+        <div className="project-technologies">
+          {project.technologies.map((tech) => (
+            <img
+              key={tech}
+              src={technologyAndToolLogos[tech]}
+              alt={tech}
+              className="technology-logo"
+              title={tech}
+            />
+          ))}
+        </div>
       </div>
     </div>
-  </div>
-);
+  );
+};
 
 export default ProjectCard;

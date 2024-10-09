@@ -1,4 +1,4 @@
-const translations = {
+const websiteTranslations = {
   navbar: {
     pt: {
       home: "Início",
@@ -62,26 +62,29 @@ const translations = {
       title: "Meus projetos",
       description:
         "Explore alguns dos projetos que desenvolvi com dedicação e empenho",
-      id_1: {
-        title: "Projeto 1",
-        description: "Meu projeto 1",
-      },
-      id_2: {
-        title: "Projeto 2",
-        description: "Meu projeto 2",
-      },
+      noProjects: "Nenhum projeto encontrado.",
+      searchPlaceholder: "Pesquisar projetos...",
+      select_1: "Todos os Projetos",
+      select_2: "Favoritos",
+      select_3: "Projetos Pessoais",
+      select_4: "Projetos Freelance",
+      clearFilters: "Limpar Filtros",
+      techFilter: "Filtrar por tecnologia:",
+      type_1: "Pessoal",
     },
     en: {
-      title: "",
-      description: "",
-      id_1: {
-        title: "",
-        description: "",
-      },
-      id_2: {
-        title: "",
-        description: "",
-      },
+      title: "My projects",
+      description:
+        "Explore some of the projects I developed with dedication and commitment",
+      noProjects: "No projects found.",
+      searchPlaceholder: "Search projects...",
+      select_1: "All Projects",
+      select_2: "Favorites",
+      select_3: "Personal Projects",
+      select_4: "Freelance Projects",
+      clearFilters: "Clear Filters",
+      techFilter: "Filter by technology:",
+      type_1: "Personal",
     },
   },
   footer: {
@@ -96,4 +99,4 @@ const translations = {
   },
 };
 
-export default translations;
+export default websiteTranslations;

@@ -1,5 +1,5 @@
 import { createContext, useContext, useState } from "react";
-import translations from "../locales/translations";
+import websiteTranslations from "../translations/websiteTranslations";
 
 const LanguageContext = createContext();
 
@@ -7,7 +7,7 @@ export const LanguageProvider = ({ children }) => {
   const [language, setLanguage] = useState("pt");
 
   const t = (component, key) => {
-    const componentTranslations = translations[component][language];
+    const componentTranslations = websiteTranslations[component][language];
     return componentTranslations[key] || key;
   };
 

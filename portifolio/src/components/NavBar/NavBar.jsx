@@ -10,9 +10,6 @@ import { FiMenu, FiX } from "react-icons/fi";
 // Context
 import { useLanguage } from "../../context/LanguageContext";
 
-// Components
-import FloatingActionButton from "../FloatingActionButton/FloatingActionButton";
-
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const { t } = useLanguage();
@@ -82,7 +79,6 @@ const NavBar = () => {
           ))}
         </div>
       </div>
-      <FloatingActionButton />
     </nav>
   );
 };
