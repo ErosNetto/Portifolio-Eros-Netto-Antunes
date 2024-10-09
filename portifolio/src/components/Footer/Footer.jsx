@@ -1,14 +1,14 @@
 import "./Footer.css";
 
+// Context
+import { useLanguage } from "../../context/LanguageContext";
+
 // SVGs
 import Instagram from "../../assets/instagram.svg";
 import Github from "../../assets/github.svg";
 import Gmail from "../../assets/gmail.svg";
 import Linkedin from "../../assets/linkedin.svg";
 import Whatsapp from "../../assets/whatsapp.svg";
-
-// Context
-import { useLanguage } from "../../context/LanguageContext";
 
 const Footer = () => {
   const { t } = useLanguage();

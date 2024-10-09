@@ -3,13 +3,14 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  /* height: 100vh; */
   height: 100dvh;
   background-color: #f0f0f0;
   padding: 20px;
 }
 
 .about-container {
-  max-width: 1200px;
+  max-width: 80rem;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -17,7 +18,7 @@
 }
 
 .about-title {
-  font-size: 2rem;
+  font-size: 2.25rem;
   font-weight: bold;
   margin-bottom: 20px;
   text-align: center;
@@ -27,6 +28,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  gap: 3rem;
   text-align: center;
 }
 
@@ -51,12 +53,14 @@
   margin: 10px 0;
   font-size: 1.125rem;
   line-height: 1.5;
+  text-align: justify;
 }
 
 /* Estilos para mobile */
 @media (max-width: 768px) {
   .about-content {
     flex-direction: column;
+    gap: 0;
   }
 
   .about-image {
