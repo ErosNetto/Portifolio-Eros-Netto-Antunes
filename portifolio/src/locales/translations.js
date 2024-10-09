@@ -31,18 +31,18 @@ const translations = {
   },
   aboutMe: {
     pt: {
-      title: "Sobre Mim",
+      title: "Sobre mim",
       aboutTextOne:
-        "Sou um desenvolvedor full stack com paixão por criar aplicações web robustas e escaláveis. Com experiência em diversas tecnologias modernas, estou sempre em busca de novos desafios e oportunidades para aprender e crescer.",
+        "Meu nome é Eros Netto Antunes e sou desenvolvedor web. Possuo formação técnica em informática e atualmente estou cursando Engenharia de Software na Universidade Unibrasil.",
       aboutTextTwo:
-        "Quando não estou codando, gosto de [seus hobbies ou interesses]. Acredito que um bom equilíbrio entre trabalho e vida pessoal é essencial para manter a criatividade e produtividade.",
+        "Tenho trabalhado como freelancer na área de desenvolvimento web, onde crio aplicações completas, desde o backend até o frontend. Além disso, estou continuamente envolvido na criação de vários projetos enquanto prosigo com meus estudos, buscando aprimorar meu conhecimento em programação web.",
     },
     en: {
-      title: "About Me",
+      title: "About me",
       aboutTextOne:
-        "I'm a full stack developer with a passion for creating robust and scalable web applications. With experience in several modern technologies, I am always looking for new challenges and opportunities to learn and grow.",
+        "My name is Eros Netto Antunes and I am a web developer. I have a technical background in IT and am currently studying Software Engineering at Unibrasil University.",
       aboutTextTwo:
-        "When I'm not coding, I enjoy [your hobbies or interests]. I believe that a good balance between work and personal life is essential to maintain creativity and productivity.",
+        "I have been working as a freelancer in the web development area, where I create complete applications, from the backend to the frontend. Furthermore, I am continually involved in creating various projects while continuing with my studies, seeking to improve my knowledge in web programming.",
     },
   },
   techAndTools: {
@@ -58,8 +58,31 @@ const translations = {
     },
   },
   projects: {
-    pt: {},
-    en: {},
+    pt: {
+      title: "Meus projetos",
+      description:
+        "Explore alguns dos projetos que desenvolvi com dedicação e empenho",
+      id_1: {
+        title: "Projeto 1",
+        description: "Meu projeto 1",
+      },
+      id_2: {
+        title: "Projeto 2",
+        description: "Meu projeto 2",
+      },
+    },
+    en: {
+      title: "",
+      description: "",
+      id_1: {
+        title: "",
+        description: "",
+      },
+      id_2: {
+        title: "",
+        description: "",
+      },
+    },
   },
   footer: {
     pt: {

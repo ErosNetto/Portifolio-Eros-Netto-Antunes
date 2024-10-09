@@ -1,0 +1,74 @@
+import "./ProjectCard.css";
+
+import { BsStarFill, BsStar } from "react-icons/bs";
+
+// SVGs
+import JSLogo from "../../assets/techAndTools/javascript-logo.svg";
+import TSLogo from "../../assets/techAndTools/typescript-logo.svg";
+import NodeLogo from "../../assets/techAndTools/nodejs-logo.svg";
+import ReactLogo from "../../assets/techAndTools/react-logo.svg";
+import ReduxLogo from "../../assets/techAndTools/redux-logo.svg";
+// import CsharpLogo from "../../assets/techAndTools/csharp-logo.svg";
+import MongoDBLogo from "../../assets/techAndTools/mongodb-logo.svg";
+import MySQLLogo from "../../assets/techAndTools/mysql-logo.svg";
+// import FirebaseLogo from "../../assets/techAndTools/firebase-logo.svg";
+import HTMLLogo from "../../assets/techAndTools/html-logo.svg";
+import CSSLogo from "../../assets/techAndTools/css-logo.svg";
+import DockerLogo from "../../assets/techAndTools/docker-logo.svg";
+import GoogleCloudLogo from "../../assets/techAndTools/googlecloud-logo.svg";
+import PostmanLogo from "../../assets/techAndTools/postman-logo.svg";
+import InsomniaLogo from "../../assets/techAndTools/insomnia-logo.svg";
+
+// Technology and tools logos
+const technologyAndToolLogos = {
+  js: JSLogo,
+  ts: TSLogo,
+  node: NodeLogo,
+  react: ReactLogo,
+  redux: ReduxLogo,
+  // csharp: CsharpLogo,
+  mongodb: MongoDBLogo,
+  mySQL: MySQLLogo,
+  // firebase: FirebaseLogo,
+  html: HTMLLogo,
+  css: CSSLogo,
+  docker: DockerLogo,
+  googleCloud: GoogleCloudLogo,
+  postman: PostmanLogo,
+  insomnia: InsomniaLogo,
+};
+
+const ProjectCard = ({ project }) => (
+  <div className="project-card">
+    <div className="project-image-container">
+      <img src={project.image} alt={project.title} className="project-image" />
+      <span
+        className={`project-type ${
+          project.type === "personal" ? "personal" : "freelance"
+        }`}
+      >
+        {project.type === "personal" ? "Pessoal" : "Freelance"}
+      </span>
+    </div>
+    <div className="project-content">
+      <div className="project-header">
+        <h3 className="project-title">{project.title}</h3>
+        {project.isFavorite && <BsStarFill className="star-icon" />}
+      </div>
+      <p className="project-description">{project.description}</p>
+      <div className="project-technologies">
+        {project.technologies.map((tech) => (
+          <img
+            key={tech}
+            src={technologyAndToolLogos[tech]}
+            alt={tech}
+            className="technology-logo"
+            title={tech}
+          />
+        ))}
+      </div>
+    </div>
+  </div>
+);
+
+export default ProjectCard;

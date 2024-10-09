@@ -1,0 +1,32 @@
+.carouse-tech-tools {
+  width: 90%;
+  margin: 2rem auto 1rem auto;
+}
+
+.swiper {
+  width: 90%;
+}
+
+.tech-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tech-logo {
+  max-width: 90%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Estilos para mobile */
+@media (max-width: 768px) {
+  .carouse-tech-tools {
+    width: 100%;
+    margin: 2rem auto auto auto;
+  }
+
+  .swiper {
+    width: 100%;
+  }
+}

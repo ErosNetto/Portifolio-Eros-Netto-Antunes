@@ -1,0 +1,72 @@
+.project-card {
+  background-color: white;
+  border-radius: 0.5rem; /* rounded-lg */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* shadow-md */
+  overflow: hidden; /* overflow-hidden */
+  transition: box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Efeito de sombra ao passar o mouse */
+}
+
+.project-image-container {
+  position: relative;
+}
+
+.project-image {
+  width: 100%; /* w-full */
+  height: 12rem; /* h-48 */
+  object-fit: cover; /* object-cover */
+}
+
+.project-type {
+  position: absolute;
+  top: 0.5rem; /* top-0.5 */
+  right: 0.5rem; /* right-0.5 */
+  margin: 0.5rem; /* m-2 */
+  font-size: 0.75rem; /* text-xs */
+  font-weight: 600; /* font-semibold */
+  padding: 0.25rem 0.5rem; /* px-2 py-1 */
+  border-radius: 9999px; /* rounded-full */
+  color: white;
+}
+
+.personal {
+  background-color: #3b82f6; /* bg-blue-500 */
+}
+
+.freelance {
+  background-color: #22c55e; /* bg-green-500 */
+}
+
+.project-content {
+  padding: 1rem; /* p-4 */
+}
+
+.project-header {
+  display: flex;
+  align-items: center; /* items-center */
+  justify-content: space-between; /* justify-between */
+  margin-bottom: 0.5rem; /* mb-2 */
+}
+
+.project-title {
+  font-size: 1.25rem; /* text-xl */
+  font-weight: 600; /* font-semibold */
+}
+
+.project-description {
+  color: #4b5563; /* text-gray-600 */
+  margin-bottom: 1rem; /* mb-4 */
+}
+
+.project-technologies {
+  display: flex;
+  gap: 0.5rem; /* space-x-2 */
+}
+
+.technology-logo {
+  height: 1.5rem; /* h-6 */
+  width: 1.5rem; /* w-6 */
+}

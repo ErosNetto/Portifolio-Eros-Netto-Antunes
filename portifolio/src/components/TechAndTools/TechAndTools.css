@@ -19,26 +19,5 @@
 
 .tech-description {
   font-size: 1.25rem;
-  margin-bottom: 4rem;
+  line-height: 1.5;
 }
-
-.mySwiper {
-  width: 80%;
-}
-
-.tech-item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.tech-logo {
-  width: auto;
-  height: 100px;
-  object-fit: contain;
-  /* margin-bottom: 10px; */
-}
-
-/* .swiper-pagination-bullet {
-  background-color: #fff;
-} */
