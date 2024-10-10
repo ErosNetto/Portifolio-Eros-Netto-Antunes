@@ -32,12 +32,6 @@
   border: 1px solid #cbd5e0;
   border-radius: 0.375rem;
 }
-/* 
-.filter-select {
-  padding: 0.75rem;
-  border: 1px solid #cbd5e0;
-  border-radius: 0.375rem;
-} */
 
 .filter-content {
   display: flex;
@@ -74,29 +68,59 @@
   font-size: 1rem;
   font-weight: 600;
   margin-bottom: 0.5rem;
+  text-align: center;
 }
 
-.tech-buttons {
+.checkbox-inputs {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5rem;
+  gap: 10px;
+  border-radius: 0.5rem;
+  /* background: #eee; */
+  /* border: 1px solid #435dd8; */
+  box-shadow: 0 0 0px 1px rgba(0, 0, 0, 0.06);
+  padding: 0.25rem;
+  width: 100%;
+  font-size: 14px;
 }
 
-.tech-button {
-  padding: 0.5rem 1rem;
-  border-radius: 9999px;
-  background-color: #e2e8f0;
-  color: #2d3748;
-  font-size: 0.875rem;
+.checkbox-inputs .checkbox {
+  flex: 1 1 calc(20% - 10px);
+  transition: all 0.2s ease;
+  text-align: center;
+  margin: 0;
+  border-radius: 0.5rem;
+}
+
+.checkbox-inputs .checkbox:hover {
+  background: #2a2e3c;
+}
+
+.checkbox-inputs .checkbox input {
+  display: none;
+}
+
+.checkbox-inputs .checkbox .name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  border-radius: 0.5rem;
+  padding: 0.4rem;
   cursor: pointer;
+  color: #fff;
+  transition: all 0.15s ease-in-out;
+  border: 2px solid transparent;
 }
 
-.tech-button.selected {
-  background-color: #4299e1;
-  color: white;
+.checkbox-inputs .checkbox input:checked + .name {
+  /* font-weight: 600; */
+  background: #2d3750;
+  border-color: #435dd8;
 }
 
-/* teste */
+/* Radio button */
 .radio-input {
   display: flex;
   flex-direction: column;
@@ -183,5 +207,13 @@
   }
   100% {
     box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+  }
+}
+
+/* Estilos para mobile */
+@media (max-width: 48rem) {
+  .filter-content {
+    flex-direction: column;
+    gap: 1rem;
   }
 }

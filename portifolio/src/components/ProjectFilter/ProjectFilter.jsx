@@ -26,7 +26,7 @@ const ProjectFilter = ({
     mysql: "MySQL",
     firebase: "Firebase",
     html: "HTML5",
-    css: "CSS3",
+    css: "CSS",
   };
 
   return (
@@ -49,8 +49,8 @@ const ProjectFilter = ({
                 type="radio"
                 name="value-radio"
                 value="all"
-                checked={filterSelect === "all"} // Controla qual rádio está selecionado
-                onChange={(e) => setFilterSelect(e.target.value)} // Atualiza o estado ao mudar a seleção
+                checked={filterSelect === "all"}
+                onChange={(e) => setFilterSelect(e.target.value)}
               />
               <p className="text">{t("projects", "select_1")}</p>
             </label>
@@ -88,32 +88,21 @@ const ProjectFilter = ({
 
           <div className="tech-filter">
             <h3>{t("projects", "techFilter")}</h3>
-            <div className="tech-buttons">
+
+            <div className="checkbox-inputs">
               {allTechnologies.map((tech) => (
-                <button
-                  key={tech}
-                  onClick={() => toggleTechFilter(tech)}
-                  className={`tech-button ${
-                    techFilters.includes(tech) ? "selected" : ""
-                  }`}
-                >
-                  {technologyLabels[tech] || tech}
-                </button>
+                <label key={tech} className="checkbox">
+                  <input
+                    type="checkbox"
+                    checked={techFilters.includes(tech)}
+                    onChange={() => toggleTechFilter(tech)}
+                  />
+                  <span className="name">{technologyLabels[tech] || tech}</span>
+                </label>
               ))}
             </div>
           </div>
         </div>
-
-        {/* <select
-          className="filter-select"
-          value={filterSelect}
-          onChange={(e) => setFilterSelect(e.target.value)}
-        >
-          <option value="all">{t("projects", "select_1")}</option>
-          <option value="favorite">{t("projects", "select_2")}</option>
-          <option value="personal">{t("projects", "select_3")}</option>
-          <option value="freelance">{t("projects", "select_4")}</option>
-        </select> */}
       </div>
 
       <button onClick={clearFilters} className="clear-button">

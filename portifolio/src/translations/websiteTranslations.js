@@ -21,12 +21,14 @@ const websiteTranslations = {
       description:
         "Desenvolvedor Full Stack apaixonado por criar soluções inovadoras",
       button: "Entre em contato",
+      buttonCV: "Baixar CV",
     },
     en: {
       title: "Hello, I am Eros Netto Antunes",
       description:
         "Full Stack Developer passionate about creating innovative solutions",
       button: "Get in touch",
+      buttonCV: "Download CV",
     },
   },
   aboutMe: {
@@ -69,7 +71,7 @@ const websiteTranslations = {
       select_3: "Projetos Pessoais",
       select_4: "Projetos Freelance",
       clearFilters: "Limpar Filtros",
-      techFilter: "Filtrar por tecnologia:",
+      techFilter: "Filtrar por tecnologia",
       type_1: "Pessoal",
     },
     en: {
@@ -83,7 +85,7 @@ const websiteTranslations = {
       select_3: "Personal Projects",
       select_4: "Freelance Projects",
       clearFilters: "Clear Filters",
-      techFilter: "Filter by technology:",
+      techFilter: "Filter by technology",
       type_1: "Personal",
     },
   },

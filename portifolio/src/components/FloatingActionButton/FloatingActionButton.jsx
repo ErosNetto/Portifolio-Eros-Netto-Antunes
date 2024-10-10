@@ -23,9 +23,6 @@ const FloatingActionButton = () => {
 
   return (
     <div className="fab-container">
-      <button className="fab" onClick={toggleMenu}>
-        {isOpen ? <FiX size={24} /> : <FiSettings size={24} />}
-      </button>
       {isOpen && (
         <div className="fab-options">
           <button
@@ -42,6 +39,9 @@ const FloatingActionButton = () => {
           </button>
         </div>
       )}
+      <button className="fab" onClick={toggleMenu}>
+        {isOpen ? <FiX size={24} /> : <FiSettings size={24} />}
+      </button>
     </div>
   );
 };
