@@ -90,11 +90,13 @@ const websiteTranslations = {
   footer: {
     pt: {
       contact: "Contatos",
-      copyright: "Eros Netto Antunes. Todos os direitos reservados.",
+      copyright: "Eros Netto Antunes",
+      // copyright: "Eros Netto Antunes. Todos os direitos reservados.",
     },
     en: {
       contact: "Contacts",
-      copyright: "Eros Netto Antunes. All rights reserved.",
+      copyright: "Eros Netto Antunes",
+      // copyright: "Eros Netto Antunes. All rights reserved.",
     },
   },
 };

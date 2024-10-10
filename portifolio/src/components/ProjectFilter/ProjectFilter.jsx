@@ -42,7 +42,43 @@ const ProjectFilter = ({
           />
         </div>
 
-        <select
+        <div className="radio-input">
+          <label className="label">
+            <input type="radio" checked={true} name="value-radio" value="all" />
+            <p className="text">{t("projects", "select_1")}</p>
+          </label>
+          <label className="label">
+            <input type="radio" name="value-radio" value="favorite" />
+            <p className="text">{t("projects", "select_2")}</p>
+          </label>
+          <label className="label">
+            <input type="radio" name="value-radio" value="personal" />
+            <p className="text">{t("projects", "select_3")}</p>
+          </label>
+          <label className="label">
+            <input type="radio" name="value-radio" value="freelance" />
+            <p className="text">{t("projects", "select_4")}</p>
+          </label>
+        </div>
+
+        <div className="tech-filter">
+          <h3>{t("projects", "techFilter")}</h3>
+          <div className="tech-buttons">
+            {allTechnologies.map((tech) => (
+              <button
+                key={tech}
+                onClick={() => toggleTechFilter(tech)}
+                className={`tech-button ${
+                  techFilters.includes(tech) ? "selected" : ""
+                }`}
+              >
+                {technologyLabels[tech] || tech}
+              </button>
+            ))}
+          </div>
+        </div>
+
+        {/* <select
           className="filter-select"
           value={filterSelect}
           onChange={(e) => setFilterSelect(e.target.value)}
@@ -51,24 +87,7 @@ const ProjectFilter = ({
           <option value="favorite">{t("projects", "select_2")}</option>
           <option value="personal">{t("projects", "select_3")}</option>
           <option value="freelance">{t("projects", "select_4")}</option>
-        </select>
-      </div>
-
-      <div className="tech-filter">
-        <h3>{t("projects", "techFilter")}</h3>
-        <div className="tech-buttons">
-          {allTechnologies.map((tech) => (
-            <button
-              key={tech}
-              onClick={() => toggleTechFilter(tech)}
-              className={`tech-button ${
-                techFilters.includes(tech) ? "selected" : ""
-              }`}
-            >
-              {technologyLabels[tech] || tech}
-            </button>
-          ))}
-        </div>
+        </select> */}
       </div>
 
       <button onClick={clearFilters} className="clear-button">

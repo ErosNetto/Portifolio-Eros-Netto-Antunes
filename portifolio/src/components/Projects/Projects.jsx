@@ -15,7 +15,7 @@ import projectsData from "../../data/projectsData";
 import projectTranslations from "../../translations/projectsTranslations";
 
 const Projects = () => {
-  const { t, currentLanguage } = useLanguage(); // Pegue a linguagem atual
+  const { t, currentLanguage } = useLanguage();
   const [searchTerm, setSearchTerm] = useState("");
   const [filterSelect, setFilterSelect] = useState("all");
   const [techFilters, setTechFilters] = useState([]);

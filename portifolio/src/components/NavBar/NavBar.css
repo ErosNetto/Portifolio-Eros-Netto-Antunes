@@ -5,6 +5,7 @@
   left: 0;
   right: 0;
   z-index: 100;
+  /* background: rgba(33, 33, 33, 0.2); */
   background: rgba(33, 33, 33, 0.2);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
@@ -39,10 +40,11 @@
   color: #fff;
   font-size: 0.9rem;
   font-weight: 500;
+  transition: all 0.3s ease;
 }
 
 .menu-link:hover {
-  background: #4a5568;
+  background: #212121;
 }
 
 .mobile-menu {
