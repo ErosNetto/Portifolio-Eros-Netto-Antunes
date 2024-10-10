@@ -42,39 +42,65 @@ const ProjectFilter = ({
           />
         </div>
 
-        <div className="radio-input">
-          <label className="label">
-            <input type="radio" checked={true} name="value-radio" value="all" />
-            <p className="text">{t("projects", "select_1")}</p>
-          </label>
-          <label className="label">
-            <input type="radio" name="value-radio" value="favorite" />
-            <p className="text">{t("projects", "select_2")}</p>
-          </label>
-          <label className="label">
-            <input type="radio" name="value-radio" value="personal" />
-            <p className="text">{t("projects", "select_3")}</p>
-          </label>
-          <label className="label">
-            <input type="radio" name="value-radio" value="freelance" />
-            <p className="text">{t("projects", "select_4")}</p>
-          </label>
-        </div>
+        <div className="filter-content">
+          <div className="radio-input">
+            <label className="label">
+              <input
+                type="radio"
+                name="value-radio"
+                value="all"
+                checked={filterSelect === "all"} // Controla qual rádio está selecionado
+                onChange={(e) => setFilterSelect(e.target.value)} // Atualiza o estado ao mudar a seleção
+              />
+              <p className="text">{t("projects", "select_1")}</p>
+            </label>
+            <label className="label">
+              <input
+                type="radio"
+                name="value-radio"
+                value="favorite"
+                checked={filterSelect === "favorite"}
+                onChange={(e) => setFilterSelect(e.target.value)}
+              />
+              <p className="text">{t("projects", "select_2")}</p>
+            </label>
+            <label className="label">
+              <input
+                type="radio"
+                name="value-radio"
+                value="personal"
+                checked={filterSelect === "personal"}
+                onChange={(e) => setFilterSelect(e.target.value)}
+              />
+              <p className="text">{t("projects", "select_3")}</p>
+            </label>
+            <label className="label">
+              <input
+                type="radio"
+                name="value-radio"
+                value="freelance"
+                checked={filterSelect === "freelance"}
+                onChange={(e) => setFilterSelect(e.target.value)}
+              />
+              <p className="text">{t("projects", "select_4")}</p>
+            </label>
+          </div>
 
-        <div className="tech-filter">
-          <h3>{t("projects", "techFilter")}</h3>
-          <div className="tech-buttons">
-            {allTechnologies.map((tech) => (
-              <button
-                key={tech}
-                onClick={() => toggleTechFilter(tech)}
-                className={`tech-button ${
-                  techFilters.includes(tech) ? "selected" : ""
-                }`}
-              >
-                {technologyLabels[tech] || tech}
-              </button>
-            ))}
+          <div className="tech-filter">
+            <h3>{t("projects", "techFilter")}</h3>
+            <div className="tech-buttons">
+              {allTechnologies.map((tech) => (
+                <button
+                  key={tech}
+                  onClick={() => toggleTechFilter(tech)}
+                  className={`tech-button ${
+                    techFilters.includes(tech) ? "selected" : ""
+                  }`}
+                >
+                  {technologyLabels[tech] || tech}
+                </button>
+              ))}
+            </div>
           </div>
         </div>
 
