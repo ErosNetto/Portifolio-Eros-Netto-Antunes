@@ -29,6 +29,14 @@
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1.5rem;
 }
+/* 
+.projects-grid:hover .project-card {
+  opacity: 0.6;
+}
+
+.projects-grid .project-card:hover {
+  opacity: 1;
+} */
 
 .no-projects {
   text-align: center;

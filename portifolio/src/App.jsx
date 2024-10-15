@@ -1,6 +1,11 @@
 // CSS
 import "./App.css";
 
+import { useState } from "react";
+
+// Modal
+import ProjectModal from "./components/ProjectModal/ProjectModal";
+
 // Context
 import { LanguageProvider } from "./context/LanguageContext";
 
@@ -14,6 +19,16 @@ import Footer from "./components/Footer/Footer";
 import FloatingActionButton from "./components/FloatingActionButton/FloatingActionButton";
 
 function App() {
+  const [selectedProject, setSelectedProject] = useState(null);
+
+  const openModal = (project) => {
+    setSelectedProject(project);
+  };
+
+  const closeModal = () => {
+    setSelectedProject(null);
+  };
+
   return (
     <div className="app">
       <LanguageProvider>
@@ -21,9 +36,10 @@ function App() {
         <Intro />
         <AboutMe />
         <TechAndTools />
-        <Projects />
+        <Projects openModal={openModal} />
         <Footer />
         <FloatingActionButton />
+        <ProjectModal project={selectedProject} closeModal={closeModal} />
       </LanguageProvider>
     </div>
   );

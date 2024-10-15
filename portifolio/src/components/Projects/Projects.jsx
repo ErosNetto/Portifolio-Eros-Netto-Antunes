@@ -14,7 +14,7 @@ import projectsData from "../../data/projectsData";
 // Translations
 import projectTranslations from "../../translations/projectsTranslations";
 
-const Projects = () => {
+const Projects = ({ openModal }) => {
   const { t, currentLanguage } = useLanguage();
   const [searchTerm, setSearchTerm] = useState("");
   const [filterSelect, setFilterSelect] = useState("all");
@@ -72,7 +72,11 @@ const Projects = () => {
 
         <div className="projects-grid">
           {filteredProjects.map((project) => (
-            <ProjectCard key={project.id} project={project} />
+            <ProjectCard
+              key={project.id}
+              project={project}
+              onClick={() => openModal(project)}
+            />
           ))}
         </div>
 

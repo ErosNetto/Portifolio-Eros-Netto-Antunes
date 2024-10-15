@@ -45,16 +45,12 @@ const technologyAndToolLogos = {
 // Translations
 import projectTranslations from "../../translations/projectsTranslations";
 
-// // Logos
-// import { technologyAndToolLogos } from "../../assets/techAndTools";
-
-const ProjectCard = ({ project }) => {
+const ProjectCard = ({ project, onClick }) => {
   const { currentLanguage, t } = useLanguage();
-
   const translation = projectTranslations[currentLanguage][project.id];
 
   return (
-    <div className="project-card">
+    <div className="project-card" onClick={onClick}>
       <div className="project-image-container">
         <img
           src={project.image}
@@ -80,10 +76,8 @@ const ProjectCard = ({ project }) => {
             <img
               key={tech}
               src={technologyAndToolLogos[tech]}
-              // src={technologyAndToolLogos[tech]}
               alt={tech}
               className="technology-logo"
-              title={tech}
             />
           ))}
         </div>
