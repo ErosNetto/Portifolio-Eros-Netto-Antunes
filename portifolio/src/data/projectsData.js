@@ -13,7 +13,7 @@ const projectsData = [
   {
     id: 1,
     image: SiteVendaDeCurso,
-    additionalImages: "",
+    images: [SiteVendaDeCurso, SiteVendaDeCurso, SiteVendaDeCurso],
     technologies: ["js", "react", "node", "redux", "css", "mysql"],
     isFavorite: true,
     type: "personal",

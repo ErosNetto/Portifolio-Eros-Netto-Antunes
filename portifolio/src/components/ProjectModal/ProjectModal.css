@@ -73,6 +73,13 @@ span.type-freelance {
   margin-bottom: 20px;
 }
 
+.project-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
 .project-technologies {
   display: flex;
   flex-direction: row;

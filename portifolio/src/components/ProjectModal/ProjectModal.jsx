@@ -4,6 +4,11 @@ import { useEffect, useState } from "react";
 
 import Modal from "react-modal";
 
+// Swiper
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination, Autoplay } from "swiper/modules";
+import "swiper/css/bundle";
+
 // Icons
 import { BsStarFill, BsGlobe, BsCodeSlash } from "react-icons/bs";
 
@@ -106,7 +111,31 @@ const ProjectModal = ({ project, closeModal }) => {
             </button>
           </div>
 
-          <div className="images"></div>
+          <div className="images">
+            <Swiper
+              modules={[Pagination, Autoplay]}
+              pagination={{ clickable: true }}
+              slidesPerView={1}
+              spaceBetween={30}
+              loop={true}
+              autoplay={{
+                delay: 5000,
+                disableOnInteraction: false,
+              }}
+              className="swiper"
+            >
+              {project.images &&
+                project.images.map((image, index) => (
+                  <SwiperSlide key={index}>
+                    <img
+                      src={image}
+                      alt={`Project ${index}`}
+                      // className="project-image"
+                    />
+                  </SwiperSlide>
+                ))}
+            </Swiper>
+          </div>
 
           <p>{translation && translation.description}</p>
 
