@@ -4,6 +4,7 @@ const projectTranslations = {
       title: "Site Venda de Curso",
       description:
         "Este é o meu Trabalho de Conclusão de Curso para o Técnico em Informática. O projeto consiste em um Site de Venda de Cursos Online, que foi inspirado no website da Udemy.",
+      formalDescription: "",
     },
     2: {
       title: "A Rede Social",

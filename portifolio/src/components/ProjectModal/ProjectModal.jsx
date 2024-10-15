@@ -1,6 +1,11 @@
-import { useEffect, useState } from "react";
-import Modal from "react-modal";
 import "./ProjectModal.css";
+
+import { useEffect, useState } from "react";
+
+import Modal from "react-modal";
+
+// Icons
+import { BsStarFill, BsGlobe, BsCodeSlash } from "react-icons/bs";
 
 // SVGs
 import JSLogo from "../../assets/techAndTools/javascript-logo.svg";
@@ -48,7 +53,7 @@ Modal.setAppElement("#root");
 
 const ProjectModal = ({ project, closeModal }) => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
-  const { currentLanguage } = useLanguage();
+  const { currentLanguage, t } = useLanguage();
   const [translation, setTranslation] = useState(null);
 
   useEffect(() => {
@@ -69,14 +74,6 @@ const ProjectModal = ({ project, closeModal }) => {
     // };
   }, [project, currentLanguage]);
 
-  // useEffect(() => {
-  //   if (project) {
-  //     setModalIsOpen(true);
-  //   } else {
-  //     setModalIsOpen(false);
-  //   }
-  // }, [project]);
-
   return (
     <Modal
       isOpen={modalIsOpen}
@@ -89,8 +86,33 @@ const ProjectModal = ({ project, closeModal }) => {
     >
       {project ? (
         <div className="project-modal-content">
-          <h2>{translation && translation.title}</h2>
+          <div className="projet-modal-header">
+            <div className="prjet-modal-title">
+              <h2>{translation && translation.title}</h2>
+              <span
+                className={`${
+                  project.type === "personal"
+                    ? "type-personal"
+                    : "type-freelance"
+                }`}
+              >
+                {project.type === "personal"
+                  ? t("projects", "type_1")
+                  : "Freelance"}
+              </span>
+            </div>
+            <button onClick={closeModal} className="projet-modal-button-close">
+              fechar
+            </button>
+          </div>
+
+          <div className="images"></div>
+
           <p>{translation && translation.description}</p>
+
+          <h3 className="project-technologies-title">
+            Tecnologias utilizadas:
+          </h3>
           <div className="project-technologies">
             {project.technologies.map((tech) => (
               <img
@@ -101,7 +123,31 @@ const ProjectModal = ({ project, closeModal }) => {
               />
             ))}
           </div>
-          <button onClick={closeModal}>Fechar</button>
+
+          <div className="projet-modal-links">
+            <a
+              href={project.websiteUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`website-link ${
+                project.websiteUrl === "" ? "link-blocked" : ""
+              }`}
+            >
+              <BsGlobe className="icon" />
+              Ver Website
+            </a>
+            <a
+              href={project.code}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`github-link ${
+                project.code === "" ? "link-blocked" : ""
+              }`}
+            >
+              <BsCodeSlash className="icon" />
+              Ver Código
+            </a>
+          </div>
         </div>
       ) : null}
     </Modal>

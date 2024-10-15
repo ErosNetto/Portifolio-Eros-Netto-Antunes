@@ -13,11 +13,12 @@ const projectsData = [
   {
     id: 1,
     image: SiteVendaDeCurso,
+    additionalImages: "",
     technologies: ["js", "react", "node", "redux", "css", "mysql"],
     isFavorite: true,
     type: "personal",
     code: "https://github.com/ErosNetto/TCC-Site-Venda-de-Curso",
-    website: "",
+    websiteUrl: "",
   },
   {
     id: 2,
@@ -26,7 +27,7 @@ const projectsData = [
     isFavorite: true,
     type: "personal",
     code: "https://github.com/ErosNetto/A-Rede-Social",
-    website: "",
+    websiteUrl: "",
   },
   {
     id: 3,
@@ -35,7 +36,7 @@ const projectsData = [
     isFavorite: true,
     type: "freelance",
     code: "https://github.com/ErosNetto/CasaLuz",
-    website: "https://casaluzimoveis.com/",
+    websiteUrl: "https://casaluzimoveis.com/",
   },
   {
     id: 4,
@@ -44,7 +45,7 @@ const projectsData = [
     isFavorite: false,
     type: "personal",
     code: "https://github.com/ErosNetto/Projeto-MiniBlog",
-    website: "https://erosnetto.github.io/Projeto-MiniBlog/",
+    websiteUrl: "https://erosnetto.github.io/Projeto-MiniBlog/",
   },
   {
     id: 5,
@@ -53,7 +54,7 @@ const projectsData = [
     isFavorite: true,
     type: "personal",
     code: "https://github.com/ErosNetto/MovieHub",
-    website: "",
+    websiteUrl: "",
   },
   {
     id: 6,
@@ -62,7 +63,7 @@ const projectsData = [
     isFavorite: false,
     type: "personal",
     code: "https://github.com/ErosNetto/TaskMaster",
-    website: "",
+    websiteUrl: "",
   },
   {
     id: 7,
@@ -71,7 +72,7 @@ const projectsData = [
     isFavorite: false,
     type: "personal",
     code: "https://github.com/ErosNetto/Projeto-Palavra-Oculta",
-    website: "https://erosnetto.github.io/Projeto-Palavra-Oculta/",
+    websiteUrl: "https://erosnetto.github.io/Projeto-Palavra-Oculta/",
   },
   {
     id: 8,
@@ -80,7 +81,7 @@ const projectsData = [
     isFavorite: false,
     type: "personal",
     code: "https://github.com/ErosNetto/Landing-page",
-    website: "https://erosnetto.github.io/Landing-page/",
+    websiteUrl: "https://erosnetto.github.io/Landing-page/",
   },
   {
     id: 9,
@@ -89,7 +90,7 @@ const projectsData = [
     isFavorite: false,
     type: "personal",
     code: "https://github.com/ErosNetto/Projeto-SM-Mercearia",
-    website: "https://erosnetto.github.io/Projeto-SM-Mercearia/",
+    websiteUrl: "https://erosnetto.github.io/Projeto-SM-Mercearia/",
   },
 ];
 
