@@ -16,6 +16,7 @@ const ProjectFilter = ({
   allTechnologies,
 }) => {
   const { t } = useLanguage();
+
   const technologyLabels = {
     js: "JavaScript",
     ts: "TypeScript",

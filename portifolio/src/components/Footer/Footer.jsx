@@ -4,11 +4,11 @@ import "./Footer.css";
 import { useLanguage } from "../../context/LanguageContext";
 
 // SVGs
-import Instagram from "../../assets/instagram.svg";
-import Github from "../../assets/github.svg";
-import Gmail from "../../assets/gmail.svg";
-import Linkedin from "../../assets/linkedin.svg";
-import Whatsapp from "../../assets/whatsapp.svg";
+import Instagram from "../../assets/icons/instagram.svg";
+import Github from "../../assets/icons/github.svg";
+import Gmail from "../../assets/icons/gmail.svg";
+import Linkedin from "../../assets/icons/linkedin.svg";
+import Whatsapp from "../../assets/icons/whatsapp.svg";
 
 const Footer = () => {
   const { t } = useLanguage();

@@ -3,8 +3,8 @@ import SiteVendaDeCurso from "../assets/projects/site-venda-de-curso.webp";
 import ARedeSocial from "../assets/projects/a-rede-social.webp";
 import CasaLuzImoveis from "../assets/projects/casa-luz-imoveis.webp";
 import MiniBlog from "../assets/projects/miniblog.webp";
-// import MovieHub from "../assets/projects/movie-hub.webp";
-import TaskMaster from "../assets/projects/projeto_task_master.png";
+import MovieHub from "../assets/projects/movie-hub.webp";
+import TaskMaster from "../assets/projects/projeto-task-master.webp";
 import PalavraOculta from "../assets/projects/palavra-oculta.webp";
 import LandingPage from "../assets/projects/landing-page.webp";
 import SMMercearia from "../assets/projects/sm-mercearia.webp";
@@ -12,7 +12,6 @@ import SMMercearia from "../assets/projects/sm-mercearia.webp";
 const projectsData = [
   {
     id: 1,
-    image: SiteVendaDeCurso,
     images: [SiteVendaDeCurso, SiteVendaDeCurso, SiteVendaDeCurso],
     technologies: ["js", "react", "node", "redux", "css", "mysql"],
     isFavorite: true,
@@ -22,7 +21,7 @@ const projectsData = [
   },
   {
     id: 2,
-    image: ARedeSocial,
+    images: [ARedeSocial, ARedeSocial, ARedeSocial],
     technologies: ["js", "react", "node", "redux", "css", "mongodb"],
     isFavorite: true,
     type: "personal",
@@ -31,7 +30,7 @@ const projectsData = [
   },
   {
     id: 3,
-    image: CasaLuzImoveis,
+    images: [CasaLuzImoveis, CasaLuzImoveis, CasaLuzImoveis],
     technologies: ["js", "react", "node", "redux", "css", "mongodb"],
     isFavorite: true,
     type: "freelance",
@@ -40,7 +39,7 @@ const projectsData = [
   },
   {
     id: 4,
-    image: MiniBlog,
+    images: [MiniBlog, MiniBlog, MiniBlog],
     technologies: ["js", "react", "node", "css", "firebase"],
     isFavorite: false,
     type: "personal",
@@ -49,7 +48,7 @@ const projectsData = [
   },
   {
     id: 5,
-    // image: MovieHub,
+    images: [MovieHub, MovieHub, MovieHub],
     technologies: ["js", "react", "node", "css"],
     isFavorite: true,
     type: "personal",
@@ -58,7 +57,7 @@ const projectsData = [
   },
   {
     id: 6,
-    image: TaskMaster,
+    images: [TaskMaster, TaskMaster, TaskMaster],
     technologies: ["ts", "react", "node", "css"],
     isFavorite: false,
     type: "personal",
@@ -67,7 +66,7 @@ const projectsData = [
   },
   {
     id: 7,
-    image: PalavraOculta,
+    images: [PalavraOculta, PalavraOculta, PalavraOculta],
     technologies: ["js", "react", "node"],
     isFavorite: false,
     type: "personal",
@@ -76,7 +75,7 @@ const projectsData = [
   },
   {
     id: 8,
-    image: LandingPage,
+    images: [LandingPage, LandingPage, LandingPage],
     technologies: ["html", "css", "js"],
     isFavorite: false,
     type: "personal",
@@ -85,7 +84,7 @@ const projectsData = [
   },
   {
     id: 9,
-    image: SMMercearia,
+    images: [SMMercearia, SMMercearia, SMMercearia],
     technologies: ["html", "css", "js"],
     isFavorite: false,
     type: "personal",
