@@ -5,15 +5,17 @@ import { useEffect, useState } from "react";
 import Modal from "react-modal";
 
 // Swiper
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Autoplay } from "swiper/modules";
-import "swiper/css/bundle";
+import { Pagination, Navigation, Autoplay } from "swiper/modules";
 
 // Icons
-import { BsStarFill, BsGlobe, BsCodeSlash } from "react-icons/bs";
+import { BsStarFill, BsXLg, BsGlobe, BsCodeSlash } from "react-icons/bs";
 
 // Logos
-import techAndToolLogos from "../../constants/techAndToolLogos";
+import { techAndToolLogos } from "../../constants/techAndToolLogos";
 
 // Context
 import { useLanguage } from "../../context/LanguageContext";
@@ -58,9 +60,10 @@ const ProjectModal = ({ project, closeModal }) => {
     >
       {project ? (
         <div className="project-modal-content">
-          <div className="projet-modal-header">
-            <div className="prjet-modal-title">
+          <div className="project-modal-header">
+            <div className="project-modal-title">
               <h2>{translation && translation.title}</h2>
+              {project.isFavorite && <BsStarFill className="star-icon" />}
               <span
                 className={`${
                   project.type === "personal"
@@ -73,17 +76,19 @@ const ProjectModal = ({ project, closeModal }) => {
                   : "Freelance"}
               </span>
             </div>
-            <button onClick={closeModal} className="projet-modal-button-close">
-              fechar
+            <button className="project-modal-button-close" onClick={closeModal}>
+              <span className="icon">
+                <BsXLg />
+              </span>
             </button>
           </div>
 
-          <div className="images">
+          <div className="modal-images-container">
             <Swiper
-              modules={[Pagination, Autoplay]}
+              modules={[Pagination, Navigation, Autoplay]}
               pagination={{ clickable: true }}
               slidesPerView={1}
-              spaceBetween={30}
+              navigation={true}
               loop={true}
               autoplay={{
                 delay: 5000,
@@ -97,7 +102,7 @@ const ProjectModal = ({ project, closeModal }) => {
                     <img
                       src={image}
                       alt={`Project ${index}`}
-                      // className="project-image"
+                      className="project-image-modal"
                     />
                   </SwiperSlide>
                 ))}
@@ -107,9 +112,9 @@ const ProjectModal = ({ project, closeModal }) => {
           <p>{translation && translation.description}</p>
 
           <h3 className="project-technologies-title">
-            Tecnologias utilizadas:
+            {t("projects", "modalTechAndTools")}
           </h3>
-          <div className="project-technologies">
+          <div className="project-technologies-modal">
             {project.technologies.map((tech) => (
               <img
                 key={tech}
@@ -120,7 +125,7 @@ const ProjectModal = ({ project, closeModal }) => {
             ))}
           </div>
 
-          <div className="projet-modal-links">
+          <div className="project-modal-links">
             <a
               href={project.websiteUrl}
               target="_blank"
@@ -130,7 +135,7 @@ const ProjectModal = ({ project, closeModal }) => {
               }`}
             >
               <BsGlobe className="icon" />
-              Ver Website
+              {t("projects", "modalBtn_1")}
             </a>
             <a
               href={project.code}
@@ -141,7 +146,7 @@ const ProjectModal = ({ project, closeModal }) => {
               }`}
             >
               <BsCodeSlash className="icon" />
-              Ver Código
+              {t("projects", "modalBtn_2")}
             </a>
           </div>
         </div>

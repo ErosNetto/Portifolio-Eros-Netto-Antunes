@@ -18,3 +18,11 @@ a {
   text-decoration: none;
   cursor: pointer;
 }
+
+span.type-personal {
+  background-color: #3b82f6;
+}
+
+span.type-freelance {
+  background-color: #22c55e;
+}

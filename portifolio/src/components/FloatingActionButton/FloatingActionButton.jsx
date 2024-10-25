@@ -4,6 +4,7 @@ import { useState } from "react";
 
 // Icons
 import { FiSettings, FiX } from "react-icons/fi";
+import { BsDownload } from "react-icons/bs";
 
 // Context
 import { useLanguage } from "../../context/LanguageContext";
@@ -21,6 +22,16 @@ const FloatingActionButton = () => {
     setIsOpen(false);
   };
 
+  // Função para baixar o CV
+  const handleDownloadCV = () => {
+    const link = document.createElement("a");
+    link.href = "../../public/Currículo Eros Netto Antunes.pdf";
+    link.download = "Currículo Eros Netto Antunes.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <div className="fab-container">
       {isOpen && (
@@ -36,6 +47,10 @@ const FloatingActionButton = () => {
             onClick={() => handleLanguageChange("pt")}
           >
             Português
+          </button>
+          <button className="fab-option" onClick={handleDownloadCV}>
+            {/* <BsDownload /> */}
+            Baixar CV
           </button>
         </div>
       )}

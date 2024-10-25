@@ -4,11 +4,7 @@
   border-radius: 1.25rem;
   /* border-radius: 0.375rem; */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.55);
-  background: linear-gradient(
-    170deg,
-    rgba(58, 56, 56, 0.623) 0%,
-    rgb(31, 31, 31) 100%
-  );
+  background: linear-gradient(170deg, rgba(25, 26, 24, 0.6) 0%, #191a18 100%);
   cursor: pointer;
   transition: all 0.3s ease;
   color: #fff;
@@ -23,18 +19,6 @@
 
 .project-image-container {
   position: relative;
-}
-
-.card_box span {
-  position: absolute;
-  overflow: hidden;
-  width: 150px;
-  height: 150px;
-  top: -10px;
-  left: -10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .project-image {
@@ -55,16 +39,8 @@
   color: #fff;
 }
 
-.personal {
-  background-color: #3b82f6;
-}
-
-.freelance {
-  background-color: #22c55e;
-}
-
 .project-content {
-  padding: 1rem;
+  padding: 0.5rem 1rem 1rem 1rem;
 }
 
 .project-header {

@@ -73,6 +73,9 @@ const websiteTranslations = {
       clearFilters: "Limpar Filtros",
       techFilter: "Filtrar por tecnologia",
       type_1: "Pessoal",
+      modalTechAndTools: "Tecnologias utilizadas:",
+      modalBtn_1: "Ver Website",
+      modalBtn_2: "Ver Código",
     },
     en: {
       title: "My projects",
@@ -87,6 +90,9 @@ const websiteTranslations = {
       clearFilters: "Clear Filters",
       techFilter: "Filter by technology",
       type_1: "Personal",
+      modalTechAndTools: "Technologies used:",
+      modalBtn_1: "View Website",
+      modalBtn_2: "View Code",
     },
   },
   footer: {

@@ -7,7 +7,7 @@ import { BsStarFill, BsStar } from "react-icons/bs";
 import { useLanguage } from "../../context/LanguageContext";
 
 // Logos
-import techAndToolLogos from "../../constants/techAndToolLogos";
+import { techAndToolLogos } from "../../constants/techAndToolLogos";
 
 // Translations
 import projectTranslations from "../../translations/projectsTranslations";
@@ -26,7 +26,7 @@ const ProjectCard = ({ project, onClick }) => {
         />
         <span
           className={`project-type ${
-            project.type === "personal" ? "personal" : "freelance"
+            project.type === "personal" ? "type-personal" : "type-freelance"
           }`}
         >
           {project.type === "personal" ? t("projects", "type_1") : "Freelance"}
@@ -37,7 +37,7 @@ const ProjectCard = ({ project, onClick }) => {
           <h3 className="project-title">{translation.title}</h3>
           {project.isFavorite && <BsStarFill className="star-icon" />}
         </div>
-        <p className="project-description">{translation.description}</p>
+        <p className="project-description">{translation.summary}</p>
         <div className="project-technologies">
           {project.technologies.map((tech) => (
             <img
