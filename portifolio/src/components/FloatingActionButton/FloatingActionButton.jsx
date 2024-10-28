@@ -1,21 +1,20 @@
 import "./FloatingActionButton.css";
 
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 
 // Icons
-import { FiSettings, FiX } from "react-icons/fi";
-import { BsDownload } from "react-icons/bs";
+// import { FiSettings } from "react-icons/fi";
+import { BsThreeDotsVertical, BsTranslate, BsDownload } from "react-icons/bs";
 
 // Context
 import { useLanguage } from "../../context/LanguageContext";
 
 const FloatingActionButton = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const { setCurrentLanguage } = useLanguage();
+  const { setCurrentLanguage, t } = useLanguage();
+  const menuRef = useRef(null); // Cria uma referência para o menu
 
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
+  const toggleMenu = () => setIsOpen((prev) => !prev);
 
   const handleLanguageChange = (lang) => {
     setCurrentLanguage(lang);
@@ -32,31 +31,49 @@ const FloatingActionButton = () => {
     document.body.removeChild(link);
   };
 
+  // Função para fechar o menu quando o usuário clica fora dele
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
+        setIsOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+
   return (
-    <div className="fab-container">
+    <div className="dropdown-menu-container" ref={menuRef}>
+      <button className="dropdown-trigger" onClick={toggleMenu}>
+        <BsThreeDotsVertical size={20} />
+      </button>
+
       {isOpen && (
-        <div className="fab-options">
-          <button
-            className="fab-option"
-            onClick={() => handleLanguageChange("en")}
-          >
-            English
-          </button>
-          <button
-            className="fab-option"
+        <div className="dropdown-content">
+          <div
+            className="dropdown-item"
             onClick={() => handleLanguageChange("pt")}
           >
-            Português
-          </button>
-          <button className="fab-option" onClick={handleDownloadCV}>
-            {/* <BsDownload /> */}
-            Baixar CV
-          </button>
+            <BsTranslate size={18} />
+            <span>{t("floatingActionButton", "ptBr")}</span>
+          </div>
+          <div
+            className="dropdown-item"
+            onClick={() => handleLanguageChange("en")}
+          >
+            <BsTranslate size={18} />
+            <span>English</span>
+          </div>
+          <div className="dropdown-item" onClick={handleDownloadCV}>
+            <BsDownload size={18} />
+            <span>{t("floatingActionButton", "buttonCV")}</span>
+          </div>
         </div>
       )}
-      <button className="fab" onClick={toggleMenu}>
-        {isOpen ? <FiX size={24} /> : <FiSettings size={24} />}
-      </button>
     </div>
   );
 };

@@ -94,7 +94,7 @@ const ProjectModal = ({ project, closeModal }) => {
                 delay: 5000,
                 disableOnInteraction: false,
               }}
-              className="swiper"
+              className="swiperModal"
             >
               {project.images &&
                 project.images.map((image, index) => (

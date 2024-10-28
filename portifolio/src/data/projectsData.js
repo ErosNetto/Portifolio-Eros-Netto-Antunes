@@ -12,7 +12,7 @@ import SMMercearia from "../assets/projects/sm-mercearia.webp";
 const projectsData = [
   {
     id: 1,
-    images: [SiteVendaDeCurso, SiteVendaDeCurso, SiteVendaDeCurso],
+    images: [SiteVendaDeCurso],
     technologies: ["js", "react", "node", "redux", "css", "mysql"],
     isFavorite: true,
     type: "personal",
@@ -21,7 +21,7 @@ const projectsData = [
   },
   {
     id: 2,
-    images: [ARedeSocial, ARedeSocial, ARedeSocial],
+    images: [ARedeSocial],
     technologies: ["js", "react", "node", "redux", "css", "mongodb"],
     isFavorite: true,
     type: "personal",
@@ -30,25 +30,25 @@ const projectsData = [
   },
   {
     id: 3,
-    images: [CasaLuzImoveis, CasaLuzImoveis, CasaLuzImoveis],
+    images: [CasaLuzImoveis],
     technologies: ["js", "react", "node", "redux", "css", "mongodb"],
     isFavorite: true,
     type: "freelance",
     code: "https://github.com/ErosNetto/CasaLuz",
-    websiteUrl: "https://casaluzimoveis.com/",
+    websiteUrl: "https://www.casaluzimoveis.com/",
   },
   {
     id: 4,
-    images: [MiniBlog, MiniBlog, MiniBlog],
+    images: [MiniBlog],
     technologies: ["js", "react", "node", "css", "firebase"],
     isFavorite: false,
     type: "personal",
     code: "https://github.com/ErosNetto/Projeto-MiniBlog",
-    websiteUrl: "https://erosnetto.github.io/Projeto-MiniBlog/",
+    websiteUrl: "",
   },
   {
     id: 5,
-    images: [MovieHub, MovieHub, MovieHub],
+    images: [MovieHub],
     technologies: ["js", "react", "node", "css"],
     isFavorite: true,
     type: "personal",
@@ -57,7 +57,7 @@ const projectsData = [
   },
   {
     id: 6,
-    images: [TaskMaster, TaskMaster, TaskMaster],
+    images: [TaskMaster],
     technologies: ["ts", "react", "node", "css"],
     isFavorite: false,
     type: "personal",
@@ -66,16 +66,16 @@ const projectsData = [
   },
   {
     id: 7,
-    images: [PalavraOculta, PalavraOculta, PalavraOculta],
+    images: [PalavraOculta],
     technologies: ["js", "react", "node"],
     isFavorite: false,
     type: "personal",
     code: "https://github.com/ErosNetto/Projeto-Palavra-Oculta",
-    websiteUrl: "https://erosnetto.github.io/Projeto-Palavra-Oculta/",
+    websiteUrl: "",
   },
   {
     id: 8,
-    images: [LandingPage, LandingPage, LandingPage],
+    images: [LandingPage],
     technologies: ["html", "css", "js"],
     isFavorite: false,
     type: "personal",
@@ -84,12 +84,12 @@ const projectsData = [
   },
   {
     id: 9,
-    images: [SMMercearia, SMMercearia, SMMercearia],
+    images: [SMMercearia],
     technologies: ["html", "css", "js"],
     isFavorite: false,
     type: "personal",
     code: "https://github.com/ErosNetto/Projeto-SM-Mercearia",
-    websiteUrl: "https://erosnetto.github.io/Projeto-SM-Mercearia/",
+    websiteUrl: "https://erosnetto.github.io/SM-Mercearia/",
   },
 ];
 

@@ -50,13 +50,17 @@ const websiteTranslations = {
   techAndTools: {
     pt: {
       title: "Tecnologias e Ferramentas",
-      description:
+      description_1:
         "Aqui estão as principais tecnologias e ferramentas que já utilizei e utilizo no meu dia dia como desenvolvedor. Com elas, crio soluções modernas, eficientes e escaláveis, sempre priorizando inovação, performance e qualidade.",
+      description_2:
+        "Tenho me aprofundado em JavaScript e suas principais bibliotecas, com ênfase no React, para desenvolver interfaces dinâmicas e interativas.",
     },
     en: {
       title: "Technologies and Tools",
-      description:
+      description_1:
         "Here are the main technologies and tools that I have used and still use in my day-to-day life as a developer. With them, I create modern, efficient and scalable solutions, always prioritizing innovation, performance and quality.",
+      description_2:
+        "I have been delving deeper into JavaScript and its main libraries, with an emphasis on React, to develop dynamic and interactive interfaces.",
     },
   },
   projects: {
@@ -105,6 +109,16 @@ const websiteTranslations = {
       contact: "Contacts",
       copyright: "Eros Netto Antunes",
       // copyright: "Eros Netto Antunes. All rights reserved.",
+    },
+  },
+  floatingActionButton: {
+    pt: {
+      ptBr: "Português",
+      buttonCV: "Baixar CV",
+    },
+    en: {
+      ptBr: "Portuguese",
+      buttonCV: "Download CV",
     },
   },
 };
