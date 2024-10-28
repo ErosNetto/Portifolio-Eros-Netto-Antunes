@@ -7,7 +7,6 @@
   z-index: 100;
   background: rgba(25, 26, 24, 0.2);
   backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
 }
 
 .container {
@@ -60,10 +59,9 @@
 
 .menu-toggle:hover {
   color: #fff;
-  background-color: #4a5568;
+  background: #4a5568;
 }
 
-/* Esconde o menu mobile completamente em telas grandes */
 .navbar-menu.mobile {
   display: none;
 }
@@ -78,25 +76,21 @@
     display: block;
   }
 
-  /* Estado inicial do menu mobile, oculto e colapsado */
   .navbar-menu.mobile {
+    display: block;
     position: absolute;
     top: 100%;
     left: 0;
     right: 0;
-    /* background-color: #212121; */
-    background: rgba(33, 33, 33, 0.2);
+    background: rgba(25, 26, 24, 0.2);
     backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
     z-index: 99;
     max-height: 0;
     overflow: hidden;
-    opacity: 0;
+    opacity: 1;
     transition: max-height 0.3s ease, opacity 0.3s ease;
-    display: block;
   }
 
-  /* Menu quando aberto */
   .navbar-menu.mobile.open {
     max-height: 300px;
     opacity: 1;
@@ -113,6 +107,6 @@
     display: block;
     padding: 0.5rem 0.75rem;
     border-radius: 0.25rem;
-    background-color: #2d3748;
+    background: #212121;
   }
 }
