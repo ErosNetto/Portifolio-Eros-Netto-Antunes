@@ -50,7 +50,7 @@ const projectsData = [
     isFavorite: true,
     type: "personal",
     code: "https://github.com/ErosNetto/A-Rede-Social",
-    websiteUrl: "",
+    websiteUrl: "https://aredesocial-eros.vercel.app/",
   },
   {
     id: 3,
@@ -68,7 +68,7 @@ const projectsData = [
     isFavorite: false,
     type: "personal",
     code: "https://github.com/ErosNetto/Projeto-MiniBlog",
-    websiteUrl: "",
+    websiteUrl: "https://miniblog-eros.vercel.app/",
   },
   {
     id: 5,
@@ -77,7 +77,7 @@ const projectsData = [
     isFavorite: true,
     type: "personal",
     code: "https://github.com/ErosNetto/MovieHub",
-    websiteUrl: "https://moviehubreact.vercel.app/",
+    websiteUrl: "https://moviehub-eros.vercel.app/",
   },
   {
     id: 6,
@@ -86,7 +86,7 @@ const projectsData = [
     isFavorite: false,
     type: "personal",
     code: "https://github.com/ErosNetto/TaskMaster",
-    websiteUrl: "https://taskmaster-ts.vercel.app/",
+    websiteUrl: "https://taskmaster-eros.vercel.app/",
   },
   {
     id: 7,
