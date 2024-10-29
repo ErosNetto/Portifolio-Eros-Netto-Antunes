@@ -11,7 +11,7 @@ const projectTranslations = {
       title: "A Rede Social",
       summary: "Projeto de rede social semelhante ao Instagram.",
       description:
-        "Este projeto é uma rede social parecida com o Instagram, com funcionalidades de compartilhamento de fotos e interação entre usuários.",
+        "Este projeto é uma rede social inspirada no Instagram, oferecendo funcionalidades para postagem de fotos e interação entre usuários.",
     },
     3: {
       title: "Casa Luz Imóveis",
@@ -24,7 +24,7 @@ const projectTranslations = {
       title: "MiniBlog",
       summary: "Website de um MiniBlog para postagens rápidas.",
       description:
-        "Este projeto consiste em um website de um MiniBlog, permitindo a criação e compartilhamento de postagens simples e rápidas.",
+        "Este projeto consiste em um website de um MiniBlog, permitindo a criação de postagens simples e rápidas.",
     },
     5: {
       title: "MovieHub",
@@ -69,7 +69,7 @@ const projectTranslations = {
       title: "The Social Network",
       summary: "Project for a social network similar to Instagram.",
       description:
-        "This project is a social network similar to Instagram, with functionalities for sharing photos and interacting between users.",
+        "This project is a social network inspired by Instagram, offering features for posting photos and interaction between users.",
     },
     3: {
       title: "Casa Luz Imoveis",
@@ -82,7 +82,7 @@ const projectTranslations = {
       title: "MiniBlog",
       summary: "Website for a MiniBlog for quick posts.",
       description:
-        "This project consists of a MiniBlog website, allowing the creation and sharing of simple and quick posts.",
+        "This project consists of a MiniBlog website, allowing the creation of simple and quick posts.",
     },
     5: {
       title: "MovieHub",
