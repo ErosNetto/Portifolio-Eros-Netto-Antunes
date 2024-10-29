@@ -9,7 +9,7 @@ const Intro = () => {
   // Função para baixar o CV
   const handleDownloadCV = () => {
     const link = document.createElement("a");
-    link.href = "../../public/Currículo Eros Netto Antunes.pdf";
+    link.href = "/Currículo Eros Netto Antunes.pdf";
     link.download = "Currículo Eros Netto Antunes.pdf";
     document.body.appendChild(link);
     link.click();
