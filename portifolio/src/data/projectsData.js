@@ -86,7 +86,7 @@ const projectsData = [
     isFavorite: false,
     type: "personal",
     code: "https://github.com/ErosNetto/TaskMaster",
-    websiteUrl: "",
+    websiteUrl: "https://taskmaster-ts.vercel.app/",
   },
   {
     id: 7,
