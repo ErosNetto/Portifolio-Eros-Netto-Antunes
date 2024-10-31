@@ -2,15 +2,24 @@
 import SiteVendaDeCurso from "../assets/projects/site-venda-de-curso.webp";
 import ARedeSocial from "../assets/projects/a-rede-social.webp";
 import CasaLuzImoveis from "../assets/projects/casa-luz-imoveis.webp";
-import MiniBlog from "../assets/projects/miniblog.webp";
 import SMMercearia from "../assets/projects/sm-mercearia.webp";
 
-// Palavra Oculta
-import PalavraOculta1 from "../assets/projects/palavraOculta/palavra_oculta_1.webp";
-import PalavraOculta2 from "../assets/projects/palavraOculta/palavra_oculta_2.webp";
-import PalavraOculta3 from "../assets/projects/palavraOculta/palavra_oculta_3.webp";
-import PalavraOculta4 from "../assets/projects/palavraOculta/palavra_oculta_4.webp";
-import PalavraOculta5 from "../assets/projects/palavraOculta/palavra_oculta_5.webp";
+// MiniBlog
+import MiniBlog1 from "../assets/projects/miniblog_1.webp";
+import MiniBlog2 from "../assets/projects/miniblog_2.webp";
+import MiniBlog3 from "../assets/projects/miniblog_3.webp";
+import MiniBlog4 from "../assets/projects/miniblog_4.webp";
+import MiniBlog5 from "../assets/projects/miniblog_5.webp";
+import MiniBlog6 from "../assets/projects/miniblog_6.webp";
+import MiniBlog7 from "../assets/projects/miniblog_7.webp";
+import MiniBlog8 from "../assets/projects/miniblog_8.webp";
+import MiniBlog9 from "../assets/projects/miniblog_9.webp";
+
+// MovieHub
+import MovieHub1 from "../assets/projects/movieHub/movie_hub_1.webp";
+import MovieHub2 from "../assets/projects/movieHub/movie_hub_2.webp";
+import MovieHub3 from "../assets/projects/movieHub/movie_hub_3.webp";
+import MovieHub4 from "../assets/projects/movieHub/movie_hub_4.webp";
 
 // TaskMaster
 import TaskMaster1 from "../assets/projects/taskMaster/task_master_1.webp";
@@ -18,11 +27,12 @@ import TaskMaster2 from "../assets/projects/taskMaster/task_master_2.webp";
 import TaskMaster3 from "../assets/projects/taskMaster/task_master_3.webp";
 import TaskMaster4 from "../assets/projects/taskMaster/task_master_4.webp";
 
-// MovieHub
-import MovieHub1 from "../assets/projects/movieHub/movie_hub_1.webp";
-import MovieHub2 from "../assets/projects/movieHub/movie_hub_2.webp";
-import MovieHub3 from "../assets/projects/movieHub/movie_hub_3.webp";
-import MovieHub4 from "../assets/projects/movieHub/movie_hub_4.webp";
+// Palavra Oculta
+import PalavraOculta1 from "../assets/projects/palavraOculta/palavra_oculta_1.webp";
+import PalavraOculta2 from "../assets/projects/palavraOculta/palavra_oculta_2.webp";
+import PalavraOculta3 from "../assets/projects/palavraOculta/palavra_oculta_3.webp";
+import PalavraOculta4 from "../assets/projects/palavraOculta/palavra_oculta_4.webp";
+import PalavraOculta5 from "../assets/projects/palavraOculta/palavra_oculta_5.webp";
 
 // Landing Page
 import LandingPage1 from "../assets/projects/landingPage/landing_page_1.webp";
@@ -63,7 +73,17 @@ const projectsData = [
   },
   {
     id: 4,
-    images: [MiniBlog],
+    images: [
+      MiniBlog1,
+      MiniBlog2,
+      MiniBlog3,
+      MiniBlog4,
+      MiniBlog5,
+      MiniBlog6,
+      MiniBlog7,
+      MiniBlog8,
+      MiniBlog9,
+    ],
     technologies: ["js", "react", "node", "css", "firebase"],
     isFavorite: false,
     type: "personal",
