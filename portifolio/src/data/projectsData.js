@@ -5,15 +5,15 @@ import CasaLuzImoveis from "../assets/projects/casa-luz-imoveis.webp";
 import SMMercearia from "../assets/projects/sm-mercearia.webp";
 
 // MiniBlog
-import MiniBlog1 from "../assets/projects/miniblog_1.webp";
-import MiniBlog2 from "../assets/projects/miniblog_2.webp";
-import MiniBlog3 from "../assets/projects/miniblog_3.webp";
-import MiniBlog4 from "../assets/projects/miniblog_4.webp";
-import MiniBlog5 from "../assets/projects/miniblog_5.webp";
-import MiniBlog6 from "../assets/projects/miniblog_6.webp";
-import MiniBlog7 from "../assets/projects/miniblog_7.webp";
-import MiniBlog8 from "../assets/projects/miniblog_8.webp";
-import MiniBlog9 from "../assets/projects/miniblog_9.webp";
+import MiniBlog1 from "../assets/projects/miniblog/miniblog_1.webp";
+import MiniBlog2 from "../assets/projects/miniblog/miniblog_2.webp";
+import MiniBlog3 from "../assets/projects/miniblog/miniblog_3.webp";
+import MiniBlog4 from "../assets/projects/miniblog/miniblog_4.webp";
+import MiniBlog5 from "../assets/projects/miniblog/miniblog_5.webp";
+import MiniBlog6 from "../assets/projects/miniblog/miniblog_6.webp";
+import MiniBlog7 from "../assets/projects/miniblog/miniblog_7.webp";
+import MiniBlog8 from "../assets/projects/miniblog/miniblog_8.webp";
+import MiniBlog9 from "../assets/projects/miniblog/miniblog_9.webp";
 
 // MovieHub
 import MovieHub1 from "../assets/projects/movieHub/movie_hub_1.webp";
