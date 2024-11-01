@@ -1,7 +1,19 @@
-// Projects images
+// Site Venda de Curso
 import SiteVendaDeCurso from "../assets/projects/site-venda-de-curso.webp";
-import ARedeSocial from "../assets/projects/a-rede-social.webp";
+
+// A Rede Social
+import ARedeSocial1 from "../assets/projects/aRedeSocial/a_rede_social_1.webp";
+import ARedeSocial2 from "../assets/projects/aRedeSocial/a_rede_social_2.webp";
+import ARedeSocial3 from "../assets/projects/aRedeSocial/a_rede_social_3.webp";
+import ARedeSocial4 from "../assets/projects/aRedeSocial/a_rede_social_4.webp";
+import ARedeSocial5 from "../assets/projects/aRedeSocial/a_rede_social_5.webp";
+import ARedeSocial6 from "../assets/projects/aRedeSocial/a_rede_social_6.webp";
+import ARedeSocial7 from "../assets/projects/aRedeSocial/a_rede_social_7.webp";
+
+// Casa Luz Imoveis
 import CasaLuzImoveis from "../assets/projects/casa-luz-imoveis.webp";
+
+// SM Mercearia
 import SMMercearia from "../assets/projects/sm-mercearia.webp";
 
 // MiniBlog
@@ -55,7 +67,15 @@ const projectsData = [
   },
   {
     id: 2,
-    images: [ARedeSocial],
+    images: [
+      ARedeSocial1,
+      ARedeSocial2,
+      ARedeSocial3,
+      ARedeSocial4,
+      ARedeSocial5,
+      ARedeSocial6,
+      ARedeSocial7,
+    ],
     technologies: ["js", "react", "node", "redux", "css", "mongodb"],
     isFavorite: true,
     type: "personal",
