@@ -15,6 +15,7 @@ const TechAndTools = () => {
         <h1 className="tech-title">{t("techAndTools", "title")}</h1>
         <p className="tech-description">{t("techAndTools", "description_1")}</p>
         <p className="tech-description">{t("techAndTools", "description_2")}</p>
+        <p className="tech-description">{t("techAndTools", "description_3")}</p>
         <CarouselTechTools />
       </div>
     </section>

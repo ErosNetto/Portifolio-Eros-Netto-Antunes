@@ -18,6 +18,7 @@ import VScodeLogo from "../assets/techAndTools/vscode-logo.svg";
 import PostmanLogo from "../assets/techAndTools/postman-logo.svg";
 import InsomniaLogo from "../assets/techAndTools/insomnia-logo.svg";
 import FigmaLogo from "../assets/techAndTools/figma-logo.svg";
+import Arduino from "../assets/techAndTools/arduino-logo.svg";
 
 // Technology and tools logos
 const techAndToolLogos = {
@@ -57,6 +58,7 @@ const carouselTechAndToolLogos = [
   { title: "Postman", image: PostmanLogo },
   { title: "Insomnia", image: InsomniaLogo },
   { title: "Figma", image: FigmaLogo },
+  { title: "Arduino", image: Arduino },
 ];
 
 export { techAndToolLogos, carouselTechAndToolLogos };

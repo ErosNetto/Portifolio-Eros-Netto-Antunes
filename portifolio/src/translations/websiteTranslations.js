@@ -51,24 +51,28 @@ const websiteTranslations = {
     pt: {
       title: "Tecnologias e Ferramentas",
       description_1:
-        "Aqui estão as principais tecnologias e ferramentas que já utilizei e utilizo no meu dia dia como desenvolvedor. Com elas, crio soluções modernas, eficientes e escaláveis, sempre priorizando inovação, performance e qualidade.",
+        "Venho me especializado em JavaScript, atuando tanto no front-end quanto no back-end com Node.js. Possuo sólidos conhecimentos em React e Redux, com foco no desenvolvimento de aplicações web dinâmicas e de alta performance.",
       description_2:
-        "Tenho me aprofundado em JavaScript e suas principais bibliotecas, com ênfase no React, para desenvolver interfaces dinâmicas e interativas.",
+        "Tenho experiência com bancos de dados não-relacionais, como MongoDB, e com MySQL para dados relacionais. Utilizo Git e GitHub para o versionamento dos meus projetos, garantindo organização e controle nas colaborações. Já realizei diversos deploys de aplicações web em plataformas como Google Cloud, o que também me proporcionou conhecimento em Linux, permitindo que eu gerencie ambientes de produção.",
+      description_3:
+        "Além do desenvolvimento web, tenho conhecimentos em C#, C++ e C para dispositivos embarcados, como Arduino e ESP32, habilidades que adquiri na faculdade e que complementam meu perfil técnico.",
     },
     en: {
       title: "Technologies and Tools",
       description_1:
-        "Here are the main technologies and tools that I have used and still use in my day-to-day life as a developer. With them, I create modern, efficient and scalable solutions, always prioritizing innovation, performance and quality.",
+        "I have been specializing in JavaScript, working on both the front-end and back-end with Node.js. I have solid knowledge in React and Redux, with a focus on developing dynamic, high-performance web applications.",
       description_2:
-        "I have been delving deeper into JavaScript and its main libraries, with an emphasis on React, to develop dynamic and interactive interfaces.",
+        "I have experience with non-relational databases, such as MongoDB, and with MySQL for relational data. I use Git and GitHub to version my projects, ensuring organization and control in collaborations. I have already deployed several web applications on platforms such as Google Cloud, which also provided me with knowledge in Linux, allowing me to manage production environments.",
+      description_3:
+        "In addition to web development, I have knowledge in C#, C++ and C for embedded devices, such as Arduino and ESP32, skills I acquired at college and which complement my technical profile.",
     },
   },
   projects: {
     pt: {
       title: "Meus projetos",
       description:
-        "Explore alguns dos projetos que desenvolvi com dedicação e empenho",
-      noProjects: "Nenhum projeto encontrado.",
+        "Explore alguns dos projetos que desenvolvi ao longo do tempo",
+      noProjects: "Nenhum projeto encontrado",
       searchPlaceholder: "Pesquisar projetos...",
       select_1: "Todos os Projetos",
       select_2: "Favoritos",
@@ -83,9 +87,8 @@ const websiteTranslations = {
     },
     en: {
       title: "My projects",
-      description:
-        "Explore some of the projects I developed with dedication and commitment",
-      noProjects: "No projects found.",
+      description: "Explore some of the projects I've developed over time",
+      noProjects: "No projects found",
       searchPlaceholder: "Search projects...",
       select_1: "All Projects",
       select_2: "Favorites",
