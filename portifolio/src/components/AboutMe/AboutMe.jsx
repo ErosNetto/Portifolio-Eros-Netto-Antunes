@@ -4,7 +4,7 @@ import "./AboutMe.css";
 import { useLanguage } from "../../context/LanguageContext";
 
 // Images
-import FotoEros from "../../assets/foto-de-perfil-redondo2.webp";
+import FotoEros from "../../assets/foto-de-perfil-redondo.webp";
 
 const AboutMe = () => {
   const { t } = useLanguage();

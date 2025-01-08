@@ -6,6 +6,7 @@ const LanguageContext = createContext();
 export const LanguageProvider = ({ children }) => {
   const [currentLanguage, setCurrentLanguage] = useState("pt");
 
+  // Funcão translate
   const t = (component, key) => {
     const componentTranslations =
       websiteTranslations[component][currentLanguage];
