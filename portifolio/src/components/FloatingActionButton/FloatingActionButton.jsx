@@ -25,8 +25,8 @@ const FloatingActionButton = () => {
   const handleDownloadCV = () => {
     const link = document.createElement("a");
     link.href =
-      "/Portifolio-Eros-Netto-Antunes/Currículo_Eros_Netto_Antunes.pdf";
-    link.download = "Currículo_Eros_Netto_Antunes.pdf";
+      "/Portifolio-Eros-Netto-Antunes/Curriculo_Eros_Netto_Antunes.pdf";
+    link.download = "Curriculo_Eros_Netto_Antunes.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
